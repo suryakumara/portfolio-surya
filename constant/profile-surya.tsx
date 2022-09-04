@@ -1,4 +1,4 @@
-export const work = [
+export const works = [
   {
     title: "Intern 3D Web Developer",
     date: { start: "May 2021", end: "July 2021" },
@@ -8,7 +8,7 @@ export const work = [
   },
 ];
 
-export const education = [
+export const educations = [
   {
     school: "Udayana University",
     country: "Indonesia",

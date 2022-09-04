@@ -2,15 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
-import mypic from "../../assets/photo-surya.jpeg";
+import Profile from "./Profile";
+import Occupation from "./Occupation";
+import Education from "./Education";
 
 const Container = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 700px;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px #aaaaaa;
-  background-color: #f4ede4;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   cursor: pointer;
+  padding: 20px;
+  color: black;
+  display: flex;
 `;
 
 const Card = () => {
@@ -21,15 +26,12 @@ const Card = () => {
       glareColor="#ffffff"
       glarePosition="bottom"
       glareBorderRadius="20px"
+      className=" preser"
     >
       <Container>
-        <Image
-          src={mypic}
-          alt="I Made Surya Kumara Photo"
-          width="50px"
-          height="50px"
-          layout="fixed"
-        />
+        <Profile />
+        <Occupation />
+        <Education />
       </Container>
     </Tilt>
   );
